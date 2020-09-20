@@ -1,7 +1,9 @@
 import firebase from 'firebase';
 
+console.log(process.env.REACT_APP_API_KEY);
+
 const firebaseApp = firebase.initializeApp({
-  apiKey: 'AIzaSyA4Vk8LdVVQToZXMIgWoXoruVjTo552nIE',
+  apiKey: `${process.env.REACT_APP_API_KEY}`,
   authDomain: 'facebook-messenger-clone-sagar.firebaseapp.com',
   databaseURL: 'https://facebook-messenger-clone-sagar.firebaseio.com',
   projectId: 'facebook-messenger-clone-sagar',

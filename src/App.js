@@ -9,6 +9,8 @@ import Message from './Message';
 import db from './firebase';
 import './App.css';
 
+require('dotenv').config();
+
 function App() {
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState([]);
